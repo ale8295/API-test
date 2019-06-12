@@ -1,0 +1,6 @@
+rule ganador : mail {
+	strings:
+		$nombre = "ganador" nocase
+	condition:
+		all of them
+}
